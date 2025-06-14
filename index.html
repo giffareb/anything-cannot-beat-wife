@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ใดๆไม่ชนะเมีย?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-2xl text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-amber-400 mb-4 animate-pulse">ใดๆในโลก ล้วนแพ้เมีย</h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8">เสนอสิ่งที่คิดว่าจะโค่นล้มเมียผู้เป็นอำนาจสูงสุดในบ้านได้</p>
+
+        <div class="bg-gray-800 p-6 md:p-8 rounded-2xl shadow-2xl border border-gray-700">
+            <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                <input
+                    id="challenger-input"
+                    type="text"
+                    placeholder="เช่น เงิน, เหตุผล, ความหล่อ..."
+                    class="flex-grow bg-gray-700 text-white placeholder-gray-500 border-2 border-gray-600 rounded-lg p-4 text-lg focus:outline-none focus:ring-4 focus:ring-amber-500/50 focus:border-amber-500 transition-all duration-300"
+                >
+                <button
+                    id="submit-btn"
+                    class="bg-amber-500 text-gray-900 font-bold text-lg rounded-lg px-8 py-4 hover:bg-amber-400 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-amber-500/40 disabled:bg-gray-500 disabled:cursor-not-allowed"
+                >
+                    ท้าทาย!
+                </button>
+            </div>
+
+            <div id="result-container" class="bg-gray-900/50 min-h-[200px] p-6 rounded-lg border border-gray-700 flex items-center justify-center transition-all duration-500">
+                  <div id="result-content">
+                        <p id="result-text" class="text-gray-400 text-lg italic">ท้าทายอำนาจมืดสิ... ถ้ากล้าพอ</p>
+                  </div>
+            </div>
+        </div>
+
+        <footer class="mt-8 text-gray-500 text-sm">
+            <p>ขับเคลื่อนโดย Gemini API (ผู้หยั่งรู้สัจธรรมแห่งชีวิตคู่)</p>
+            <p>คำเตือน: การใช้งานแอปนี้ไม่สามารถใช้เป็นข้ออ้างในการทะเลาะกับเมียได้</p>
+        </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
